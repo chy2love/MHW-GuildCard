@@ -1,8 +1,8 @@
 import dbConnect from "@/lib/db/dbConnect"
 import GuildCard from "@/lib/schema/guild-card.model";
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
-export const GET = async(req: Request, res: Response) => {
+export const GET = async(req: NextRequest, res: NextResponse) => {
   try{
     dbConnect();
     const guildCards = GuildCard;
