@@ -49,28 +49,29 @@ export default function Page() {
       <div className="max-w-[440px] flex justify-center w-full h-fit">
         <div className="w-full max-w-[440px] min-w-[390px] h-fit px-5 pt-10 pb-20 bg-card bg-center bg-cover bg-no-repeat">
           {page === 0 && (
-            <div className="w-full h-full bg-black bg-opacity-40 rounded-2xl p-4 flex flex-col items-center">
-              <p className="font-bold text-white leading-6 break-keep">
+            <div className="w-full h-full min-h-screen bg-black bg-opacity-40 rounded-2xl p-4 flex flex-col">
+              <p className="font-bold text-white leading-7 break-keep">
                 1. 몬린이 야생단은 모두가 다같이 즐겁게 플레이 하기 위한
                 모임으로 파벌을 나누는 등 야생단 내부에서의 소모임을 운영하는
                 것을 금합니다.
               </p>
               <br />
-              <p className="font-bold text-white leading-6 break-keep">
+              <p className="font-bold text-white leading-7 break-keep">
                 2. 정치, 욕설, 종교, 그 외 모든 갈등 요소가 될 수 있는 주제는
                 가급적 삼가주시고, 비난, 욕설, 비속어, 말꼬리 물기, 반말,
                 선정적인 단어 등 불쾌감을 주는 언행 사용을 금합니다.
               </p>
               <br />
-              <p className="font-bold text-white leading-6 break-keep">
+              <p className="font-bold text-white leading-7 break-keep">
                 3. 기본적인 핵과 치트 사용을 금지하고 있습니다.
               </p>
-              <p className="pl-4 font-bold text-white leading-6 break-keep">
-                - 각종 핵 및 치트 프로그램의 사용을 금한다. Ex) 딜미터기,
-                메크로, 딜 배수
+              <br />
+              <p className="pl-4 font-bold text-white leading-7 break-keep">
+                - 각종 핵 및 치트 프로그램의 사용을 금한다.
+                <br /> Ex) 딜미터기, 메크로, 딜 배수
               </p>
               <br />
-              <p className="pl-4 font-bold text-white leading-6 break-keep">
+              <p className="pl-4 font-bold text-white leading-7 break-keep">
                 - 캐릭터의 외형, 몬스터의 외형, 유실물 및 아이템의 발견을 위한
                 발광 및 표시 등 본인에게만 보이며 타인에게 해를 주지 않는 선의
                 모드 사용을 허용한다.
