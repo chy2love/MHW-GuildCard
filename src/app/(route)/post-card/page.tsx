@@ -1,5 +1,6 @@
 'use client';
 import { weaponType } from '@/types/guildCard';
+import { redirect } from 'next/navigation';
 import { useState } from 'react';
 export default function Page() {
   const [page, setPage] = useState<0 | 1>(0);
@@ -43,6 +44,7 @@ export default function Page() {
     });
     if (res.status === 200) {
       alert('등록되었습니다. 디스코드 채널에 가입해 주세요.');
+      redirect('/card-list');
     } else {
       alert('등록에 실패했습니다. 관리자에게 문의해 주세요.');
     }
