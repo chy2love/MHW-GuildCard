@@ -21,13 +21,7 @@
       "version": "detect"
     }
   },
-  "plugins": [
-    "react",
-    "import",
-    "react-hooks",
-    "@typescript-eslint",
-    "prettier"
-  ],
+  "plugins": ["react", "import", "react-hooks", "@typescript-eslint", "prettier"],
   "extends": [
     "next/core-web-vitals",
     "eslint:recommended",
@@ -37,10 +31,7 @@
     "plugin:prettier/recommended"
   ],
   "rules": {
-    "react/jsx-filename-extension": [
-      1,
-      { "extensions": [".js", ".jsx", ".ts", ".tsx"] }
-    ], // 확장자 설정
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }], // 확장자 설정
     "import/prefer-default-export": "off", // export default 미사용 가능
     "import/no-absolute-path": "off", // 절대경로 사용가능
     "react/react-in-jsx-scope": "off", //'import React' 미사용시 오류 억제

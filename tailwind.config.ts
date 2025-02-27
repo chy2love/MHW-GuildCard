@@ -11,20 +11,19 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        card: 'url("../assets/guild-card-bg.png")',
+        card: 'url("../assets/guild-card-bg.png")'
       },
-      fontSize:{
+      fontSize: {
         sm: '11px',
         md: '14px',
-        lg: '16px',
+        lg: '16px'
       },
       fontFamily: {
         'dm-serif': ['var(--font-dm-serif)'],
         'noto-serif': ['var(--font-noto-serif)']
       },
 
-      colors: {
-      }
+      colors: {}
     }
   },
   plugins: []

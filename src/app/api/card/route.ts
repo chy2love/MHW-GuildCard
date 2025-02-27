@@ -1,9 +1,9 @@
-import dbConnect from "@/lib/db/dbConnect"
-import GuildCard from "@/lib/schema/guild-card.model";
-import { NextRequest, NextResponse } from "next/server";
+import dbConnect from '@/lib/db/dbConnect';
+import GuildCard from '@/lib/schema/guild-card.model';
+import { NextRequest, NextResponse } from 'next/server';
 
-export const POST = async(req:NextRequest, res:NextResponse) => {
-  try{
+export const POST = async (req: NextRequest) => {
+  try {
     dbConnect();
     const guildCards = GuildCard;
     const { isAgree, nickname, platform, mainWeapon, subWeapon } = await req.json();
@@ -16,8 +16,8 @@ export const POST = async(req:NextRequest, res:NextResponse) => {
     });
     await guildCard.save();
     return NextResponse.json({ message: 'success' });
-  }catch(e){
+  } catch (e) {
     console.error(e);
     throw new Error('error');
   }
-}
+};
