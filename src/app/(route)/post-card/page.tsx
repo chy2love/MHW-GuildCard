@@ -30,6 +30,9 @@ export default function Page() {
     }
     const res = await fetch('/api/card', {
       method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
       body: JSON.stringify({
         isAgree: true,
         nickname,
